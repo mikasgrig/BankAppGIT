@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=A3DA36CB_002DDBF0_002D4EFC_002DAF7F_002D7EA217FCB00A_002Fd_003ARepositories_002Ff_003AIUsersRepository_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\grigm\AppData\Local\JetBrains\Rider2021.2\resharper-host\temp\Rider\vAny\CoverageData\_BankApp.-1753779697\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=aae1ddcc_002D8e56_002D417a_002Db04a_002D852dd7ec25c6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AuthService_Should" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::C8FC4DD0-428D-443E-B393-C0DD835BC949::net5.0::Domain.UnitTest.Services.AuthService_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::CECCDEF9-E445-4647-9655-2D6C957F8547::net5.0::RestAPI.UnitTest.Controllers.AuthController_Should&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C8FC4DD0-428D-443E-B393-C0DD835BC949::net5.0::Domain.UnitTest.Services.AccountService_Should.Deposit__ReturnsAccountResponse&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C8FC4DD0-428D-443E-B393-C0DD835BC949::net5.0::Domain.UnitTest.Services.AccountService_Should.Deposit_ReturnsAccountResponse&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C8FC4DD0-428D-443E-B393-C0DD835BC949::net5.0::Domain.UnitTest.Services.AccountService_Should.SendMoney_ReturnsAccountResponse&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C8FC4DD0-428D-443E-B393-C0DD835BC949::net5.0::Domain.UnitTest.Services.AccountService_Should&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

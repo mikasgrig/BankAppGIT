@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RestAPI.Controllers
 {
+    [ApiController]
+    [Route("auth")]
     public class AuthController : ControllerBase
-
     {
         private readonly IAuthService _authService;
 
@@ -31,7 +32,6 @@ namespace RestAPI.Controllers
                 return BadRequest(e.Message);
             }
         }
-        
         [HttpPost]
         [Route("signIn")]
         public async Task<ActionResult<SignInResponse>> SignIn(SignInRequest request)

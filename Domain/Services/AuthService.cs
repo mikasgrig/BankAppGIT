@@ -9,15 +9,16 @@ using Persistence.Repositories;
 namespace Domain.Services
 {
     public class AuthService : IAuthService
-    
     {
         private readonly IFirebaseClient _firebaseClient;
         private readonly IUsersRepository _usersRepository;
-
-        public AuthService(IFirebaseClient firebaseClient, IUsersRepository usersRepository)
+        private readonly IAccountRepository _accountRepository;
+        
+        public AuthService(IFirebaseClient firebaseClient, IUsersRepository usersRepository, IAccountRepository accountRepository)
         {
             _firebaseClient = firebaseClient;
             _usersRepository = usersRepository;
+            _accountRepository = accountRepository;
         }
         public async Task<SignUpResponse> SignUpAsync(SignUpRequest request)
         {
@@ -32,6 +33,14 @@ namespace Domain.Services
             };
 
             await _usersRepository.SaveAsync(userReadModel);
+            await _accountRepository.Save(new AccountReadModel
+            {
+                Id = Guid.NewGuid(),
+                UserId = userReadModel.Id,
+                Amount = 0,
+                Name = request.AccountName,
+                DateCreated = userReadModel.DateCreated
+            });
             
             return new SignUpResponse
             {
@@ -41,7 +50,6 @@ namespace Domain.Services
                 DateCreated = userReadModel.DateCreated
             };
         }
-
         public async Task<SignInResponse> SignInAsync(SignInRequest request)
         {
             var firebaseSignInResponse = await _firebaseClient.SignInAsync(request.Email, request.Password);

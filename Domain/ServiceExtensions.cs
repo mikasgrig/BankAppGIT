@@ -2,6 +2,7 @@
 using Domain.Clients.Firebase;
 using Domain.Services;
 using Microsoft.Extensions.DependencyInjection;
+using Persistence.Repositories;
 
 
 namespace Domain
@@ -27,6 +28,7 @@ namespace Domain
         private static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddSingleton<IAuthService, AuthService>();
+            services.AddSingleton<IAccountService, AccountService>();
 
             return services;
         }

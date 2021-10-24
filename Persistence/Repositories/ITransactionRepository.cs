@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Persistence.Models;
 
@@ -8,7 +9,7 @@ namespace Persistence.Repositories
     {
         Task<int> SaveAsync(TransactionReadModel model);
         
-        Task<IEnumerable<TransactionReadModel>> GetAllAsync();
+        Task<IEnumerable<TransactionReadModel>> GetAllAsync(Guid accountId);
 
     }
 }
